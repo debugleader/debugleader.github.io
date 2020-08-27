@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My portfolio</title>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aldrich&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="nav-brand">
+            <a href="#home">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="menu-icons open">
+            <i class="icon ion-md-menu"></i>
+          </div>
+          <ul class="nav-list">
+            <div class="menu-icons close">
+              <i class="icon ion-md-close"></i>
+            </div>
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="mailto:alkhassakyabdallah@gmail.com" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="main-message">
+            <h3 class=" animate__animated animate__lightSpeedInLeft">I am abdallah,</h3>
+            <h1 class="animate__animated animate__lightSpeedInLeft">web developer</h1>
+            <p class="animate__animated animate__lightSpeedInLeft">
+              I design and help people, small agencies and businesses bring
+              their ideas to life, and I love what I do!
+            </p>
+            <div class="cta">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="container">
+          <div class="title-heading">
+            <h1 id="abouth1" class="animate__animated animate__zoomInDown">About me</h1>
+          </div>
+          <div class="about-grid">
+            <div class="about-grid-item web-dev">
+              <ion-icon
+                name="code-slash-outline"
+                size="large"
+                id="code"
+              ></ion-icon>
+              <h1>Web development</h1>
+              <p>
+                I write well designed, testable, efficient codes and develop website layout and user interfaces by using standard HTML, CSS and Javascript practices.
+              </p>
+            </div>
+            <div class="about-grid-item web-design">
+              <ion-icon name="water-outline" size="large" id="water"></ion-icon>
+              <h1>Web design</h1>
+              <p>
+                 I plan, create and design internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips.
+              </p>
+            </div>
+            <div class="about-grid-item editing">
+              <ion-icon
+                name="camera-outline"
+                size="large"
+                id="camera"
+              ></ion-icon>
+              <h1>Image and Video editing</h1>
+              <p>
+                Image and Video editing are one of my passions! I love spending hours refining and improving pictures or videos while adding awesome effects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="container">
+          <div class="skill">
+            <div class="skill-textbox">
+              I have used many technologies in the past including: HTML, CSS,
+              Javascript, React, Python, MySQL, Flask, Git, Gimp, Davinci
+              Resolve...
+            </div>
+            <ion-icon name="book-outline" id="book"></ion-icon>
+            <div class="skill-image">
+              <img src="images/code.jpg" alt="" />
+              <h1>Abdallah Al Khassaky.</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <div class="container">
+           <div class="main-message" id="fix">
+            <h3>Let the </h3>
+            <h1>adventure begin...</h1>
+            <p>
+              I am obsessed with programming languages and I love using python modules and linking databases to build awesome apps!
+            </p>
+            <a href="https://github.com/debugleader/MySQL-Python-Login-System" target="_blank" class="btn">My latest project!</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;2020. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
