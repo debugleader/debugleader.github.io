@@ -25,6 +25,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -82,7 +83,7 @@
             <h1 id="abouth1" class="animate__animated animate__zoomInDown">About me</h1>
           </div>
           <div class="about-grid">
-            <div class="about-grid-item web-dev">
+            <div id="web-dev" class="about-grid-item web-dev">
               <ion-icon
                 name="code-slash-outline"
                 size="large"
@@ -93,14 +94,14 @@
                 I write well designed, testable, efficient codes and develop website layout and user interfaces by using standard HTML, CSS and Javascript practices.
               </p>
             </div>
-            <div class="about-grid-item web-design">
+            <div id="web-design" class="about-grid-item web-design">
               <ion-icon name="water-outline" size="large" id="water"></ion-icon>
               <h1>Web design</h1>
               <p>
                  I plan, create and design internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips.
               </p>
             </div>
-            <div class="about-grid-item editing">
+            <div id="editing" class="about-grid-item editing">
               <ion-icon
                 name="camera-outline"
                 size="large"
@@ -117,13 +118,14 @@
       <section class="skills" id="skills">
         <div class="container">
           <div class="skill">
-            <div class="skill-textbox">
+            <div class="skill-textbox" id="skill-textbox">
               I have used many technologies in the past including: HTML, CSS,
               Javascript, React, Node, Express, MongoDB, Python, Flask, Django, MySQL, Git, Gimp, Davinci
               Resolve...
             </div>
-            <ion-icon name="book-outline" id="book"></ion-icon>
-            <div class="skill-image">
+              <ion-icon name="book-outline" id="book"></ion-icon>
+
+            <div class="skill-image" id="skill-image">
               <img src="images/code.jpg" alt="" />
               <h1>Abdallah Al Khassaky.</h1>
             </div>
@@ -133,19 +135,23 @@
       <section class="projects" id="projects">
         <div class="container">
            <div class="main-message" id="fix">
-            <h3>Let the </h3>
-            <h1>adventure begin...</h1>
-            <p>
+            <h3 id="specialHeader">Let the </h3>
+            <h1 id="secondSpecialHeader">adventure begin...</h1>
+            <p id="impSentence">
               I am obsessed with programming languages and I love using frameworks, libraries, tools and linking databases or consuming APIs to build awesome apps!
             </p>
-            <a href="https://kratos-studio.herokuapp.com" target="_blank" class="btn">My latest project!</a>
+            <a href="https://kratos-studio.herokuapp.com" target="_blank" class="btn" id="impButton">My latest project!</a>
         </div>
       </section>
     </main>
     <footer>
-      <p>&copy;2020. All rights reserved.</p>
+      <p id="footer">&copy;2020. All rights reserved.</p>
     </footer>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
