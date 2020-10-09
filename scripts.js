@@ -1,6 +1,23 @@
 // Active Listener
 
 const selectElement = (s) => document.querySelector(s);
+
+const home = document.getElementById("home");
+const about = document.getElementById("about");
+const skills = document.getElementById("skills");
+const projects = document.getElementById("projects");
+const contact = document.getElementById("contact");
+
+const shortcut = (indexArray) => {
+  indexArray.map((index) => {
+    index.addEventListener("click", () => {
+      selectElement(".nav-list").classList.remove("active");
+    });
+  });
+};
+
+shortcut([home, about, skills, projects, contact]);
+
 selectElement(".open").addEventListener("click", () => {
   selectElement(".nav-list").classList.add("active");
 });
