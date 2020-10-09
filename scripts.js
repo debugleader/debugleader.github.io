@@ -2,11 +2,11 @@
 
 const selectElement = (s) => document.querySelector(s);
 
-const home = document.getElementById("home");
-const about = document.getElementById("about");
-const skills = document.getElementById("skills");
-const projects = document.getElementById("projects");
-const contact = document.getElementById("contact");
+const home = document.getElementById("home-js");
+const about = document.getElementById("about-js");
+const skills = document.getElementById("skills-js");
+const projects = document.getElementById("projects-js");
+const contact = document.getElementById("contact-js");
 
 const shortcut = (indexArray) => {
   indexArray.map((index) => {
