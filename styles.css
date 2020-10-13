@@ -13,6 +13,28 @@ html {
   box-sizing: border-box;
   animation: fadeIn 1500ms;
 }
+html::-webkit-scrollbar {
+  width: 18px;
+  background-color: rgb(238, 205, 255);
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  /* background: rgb(235, 100, 140); */
+  background: linear-gradient(
+    324deg,
+    rgba(235, 100, 140, 1) 0%,
+    rgba(105, 47, 134, 1) 63%
+  );
+  /* background-image: -webkit-linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 0, 0, 0.4) 50%,
+    transparent,
+    transparent
+  ); */
+}
+
 a {
   text-decoration: none;
 }
