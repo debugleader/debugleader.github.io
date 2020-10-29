@@ -35,6 +35,34 @@ html::-webkit-scrollbar-thumb {
   ); */
 }
 
+span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -388,5 +416,29 @@ footer {
     height: 22.7rem;
     background: url("images/wave-large-reversed.png");
     background-size: cover;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-message h1 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 3.1rem;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-message h1 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 2.7rem;
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-message h1 {
+    font-family: "Aldrich", sans-serif;
+    font-size: 2.2rem;
+    margin: 1rem 0;
   }
 }

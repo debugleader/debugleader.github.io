@@ -46,6 +46,12 @@ const checkScreen = (imp, size) => {
   return window.matchMedia(`(${imp}-width: ${size}px)`).matches;
 };
 
+const bugFix = document.getElementById("bug-fix");
+
+if (checkScreen("max", 420)) {
+  bugFix.style["visibility"] = "hidden";
+}
+
 webDev.setAttribute("data-aos-mirror", "true");
 webDesign.setAttribute("data-aos-mirror", "true");
 editing.setAttribute("data-aos-mirror", "true");
@@ -98,3 +104,49 @@ impButton.setAttribute("data-aos-mirror", "true");
 footer.setAttribute("data-aos", "zoom-in-down");
 footer.setAttribute("data-aos-offset", "-40");
 footer.setAttribute("data-aos-mirror", "true");
+
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["web developer", "javascript addict", "linux lover"];
+const typingDelay = 110;
+const erasingDelay = 110;
+const newTextDelay = 310;
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if (!cursorSpan.classList.contains("typing"))
+      cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+    setTimeout(type, typingDelay + 1000);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // On DOM Load initiate the effect
+  if (textArray.length) setTimeout(type, newTextDelay);
+});
