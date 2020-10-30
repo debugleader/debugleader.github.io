@@ -108,7 +108,7 @@ footer.setAttribute("data-aos-mirror", "true");
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["web developer", "javascript addict", "linux lover"];
+const textArray = ["web developer", "self-taught", "javascript addict", "linux lover"];
 const typingDelay = 110;
 const erasingDelay = 110;
 const newTextDelay = 310;
