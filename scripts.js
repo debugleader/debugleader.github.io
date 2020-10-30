@@ -2,7 +2,7 @@
 
 const selectElement = (s) => document.querySelector(s);
 
-const home = document.getElementById("home-js");
+const github = document.getElementById("github-js");
 const about = document.getElementById("about-js");
 const skills = document.getElementById("skills-js");
 const projects = document.getElementById("projects-js");
@@ -16,7 +16,7 @@ const shortcut = (indexArray) => {
   });
 };
 
-shortcut([home, about, skills, projects, contact]);
+shortcut([github, about, skills, projects, contact]);
 
 selectElement(".open").addEventListener("click", () => {
   selectElement(".nav-list").classList.add("active");
