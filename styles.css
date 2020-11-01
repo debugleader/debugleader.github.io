@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  cursor: url("images/cursor.png"), auto;
 }
 html {
   scroll-behavior: smooth;
@@ -107,7 +108,7 @@ nav {
 .menu-icons i {
   font-size: 3.5rem;
   color: #fafafa;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .close i {
   color: #eb648c;
@@ -183,8 +184,8 @@ nav {
 }
 .btn {
   font-family: Aldrich, sans-serif;
-  background-color: #eb648c;
-  border-radius: 2rem;
+  background-color: rgba(49, 24, 131, 0.9);
+  border-radius: 32px 54px;
   color: #fafafa;
   display: inline-block;
   margin-top: 2rem;
@@ -195,11 +196,11 @@ nav {
 .btn:hover {
   animation: tada;
   animation-duration: 900ms;
-  background-color: #ff0000;
+  background-color: rgb(34, 11, 136);
   /* transform: scale(1.1); */
 }
 #abouth1 {
-  cursor: pointer;
+  /* cursor: pointer; */
   user-select: none;
   font-size: 3rem;
   display: inline-block;
@@ -232,7 +233,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   z-index: 1;
 }
 .about-grid-item::before {
